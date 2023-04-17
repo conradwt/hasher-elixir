@@ -9,6 +9,7 @@ import Config
 
 # Configures the endpoint
 config :hasher, HasherWeb.Endpoint,
+  adapter: Bandit.PhoenixAdapter,
   url: [host: "localhost"],
   render_errors: [
     formats: [json: HasherWeb.ErrorJSON],
