@@ -38,7 +38,7 @@ defmodule Hasher.MixProject do
       {:telemetry_poller, "~> 1.0.0"},
       {:gettext, "~> 0.22.1"},
       {:jason, "~> 1.4.0"},
-      {:bandit, "~> 1.0.0-pre.3"},
+      {:bandit, "~> 1.0.0-pre.4"},
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false}
     ]
   end
