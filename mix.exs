@@ -5,7 +5,7 @@ defmodule Hasher.MixProject do
     [
       app: :hasher,
       version: "0.1.0",
-      elixir: "~> 1.15.0",
+      elixir: "~> 1.15.1",
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
