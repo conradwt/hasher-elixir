@@ -1,0 +1,7 @@
+services:
+  hasher:
+    build: .
+    env_file:
+      - .env.dev
+    ports:
+      - '8002:80'

@@ -1,0 +1,8 @@
+services:
+  hasher:
+    build: .
+    env_file:
+      - .env.dev
+    image: ${REGISTRY_SLASH}hasher${COLON_TAG}
+    ports:
+      - '8002:80'
