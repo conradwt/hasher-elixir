@@ -3,6 +3,6 @@ services:
     build: .
     env_file:
       - .env.dev
-    image: ${REGISTRY_SLASH}hasher${COLON_TAG}
+    image: ${REGISTRY}/hasher-elixir/${TAG}
     ports:
       - '8002:80'
