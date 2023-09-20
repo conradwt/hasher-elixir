@@ -25,3 +25,8 @@ hasher-*.tar
 # Exclude VSCode artifacts
 .metals/
 .vscode/
+
+# Ignore all environment files
+/.env*
+!/.env.example
+!/.env.dev.example
