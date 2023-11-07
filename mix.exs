@@ -32,8 +32,8 @@ defmodule Hasher.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:phoenix, "~> 1.7.9"},
-      {:phoenix_live_dashboard, "~> 0.8.2"},
+      {:phoenix, "~> 1.7.10"},
+      {:phoenix_live_dashboard, "~> 0.8.3"},
       {:telemetry_metrics, "~> 0.6.1"},
       {:telemetry_poller, "~> 1.0.0"},
       {:gettext, "~> 0.22.3"},
