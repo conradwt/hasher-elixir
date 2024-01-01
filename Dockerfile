@@ -1,3 +1,5 @@
+# syntax=docker/dockerfile:1
+
 # Find eligible builder and runner images on Docker Hub. We use Ubuntu/Debian instead of
 # Alpine to avoid DNS resolution issues in production.
 #
@@ -12,6 +14,7 @@
 #   - https://pkgs.org/ - resource for finding needed packages
 #   - Ex: hexpm/elixir:1.14.2-erlang-25.1.2-debian-bullseye-20221004-slim
 #
+
 ARG ELIXIR_VERSION=1.16.0
 ARG OTP_VERSION=26.2.1
 ARG DEBIAN_VERSION=bullseye-20231009-slim
