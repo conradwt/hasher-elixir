@@ -15,8 +15,8 @@
 #   - Ex: hexpm/elixir:1.14.2-erlang-25.1.2-debian-bullseye-20221004-slim
 #
 
-ARG ELIXIR_VERSION=1.16.1
-ARG OTP_VERSION=26.2.2
+ARG ELIXIR_VERSION=1.16.2
+ARG OTP_VERSION=26.2.3
 ARG DEBIAN_VERSION=bullseye-20240130-slim
 
 ARG BUILDER_IMAGE="hexpm/elixir:${ELIXIR_VERSION}-erlang-${OTP_VERSION}-debian-${DEBIAN_VERSION}"
@@ -42,7 +42,7 @@ RUN apt-get update -y && apt-get install -y build-essential git \
 WORKDIR /app
 
 # install hex + rebar
-RUN mix local.hex --force && \
+RUN mix archive.install github hexpm/hex branch latest --force && \
   mix local.rebar --force
 
 # set build ENV
