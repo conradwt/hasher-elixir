@@ -39,7 +39,7 @@ defmodule Hasher.MixProject do
       {:gettext, "~> 0.22.3"},
       {:jason, "~> 1.4.1"},
       {:bandit, "~> 1.3.0"},
-      {:credo, "~> 1.7.6", only: [:dev, :test], runtime: false}
+      {:credo, "~> 1.7.7-rc.0", only: [:dev, :test], runtime: false}
     ]
   end
 
