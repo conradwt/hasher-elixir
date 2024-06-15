@@ -5,7 +5,7 @@ defmodule Hasher.MixProject do
     [
       app: :hasher,
       version: "0.2.0",
-      elixir: "~> 1.17.0-rc.0",
+      elixir: "~> 1.17.0",
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
@@ -39,7 +39,7 @@ defmodule Hasher.MixProject do
       {:gettext, "~> 0.22.3"},
       {:jason, "~> 1.4.1"},
       {:bandit, "~> 1.3.0"},
-      {:credo, "~> 1.7.7-rc.0", only: [:dev, :test], runtime: false}
+      {:credo, "~> 1.7.7", only: [:dev, :test], runtime: false}
     ]
   end
 
