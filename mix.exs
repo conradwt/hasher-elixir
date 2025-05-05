@@ -33,13 +33,13 @@ defmodule Hasher.MixProject do
   defp deps do
     [
       {:phoenix, "~> 1.7.21"},
-      {:phoenix_live_dashboard, "~> 0.8.6"},
+      {:phoenix_live_dashboard, "~> 0.8.7"},
       {:telemetry_metrics, "~> 0.6.1"},
       {:telemetry_poller, "~> 1.0.0"},
       {:gettext, "~> 0.22.3"},
       {:jason, "~> 1.4.4"},
       {:bandit, "~> 1.3.0"},
-      {:credo, "~> 1.7.11", only: [:dev, :test], runtime: false}
+      {:credo, "~> 1.7.12", only: [:dev, :test], runtime: false}
     ]
   end
 
